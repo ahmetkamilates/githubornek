@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap");
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(47, 47, 107);
+  justify-content: space-between;
+  height: 60px;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+.navbar-left i {
+  color: white;
+}
+.navbar-left .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-left .input input {
+  height: 20px;
+  width: 160px;
+  background-color: rgb(94, 92, 92);
+  border-radius: 20px;
+  border: none;
+}
+.navbar-left .input i {
+  margin-left: -25px;
+  margin-bottom: 2px;
+  opacity: 0.8;
+  color: white;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.navbar-left .navbar-list {
+  color: white;
+  list-style: none;
+  margin-left: -20px;
+}
+.navbar-left .navbar-list a {
+  text-decoration: none;
+  color: white;
+  margin-right: 8px;
+}
+.navbar-left .navbar-list a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: all 1s ease;
+}
+.navbar-left .navbar-list .active {
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  margin-right: 20px;
+}
+.navbar-right i {
+  cursor: pointer;
+}
+.navbar-right .profil {
+  display: flex;
+  gap: 5px;
+}
+.navbar-right .profil .bi-caret-down-fill {
+  cursor: pointer;
+  font-size: small;
+  margin-left: -3px;
+  margin-top: 3px;
+}
+.navbar-right .profil img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.navbar-right .plus {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+}
+.navbar-right .plus .bi-plus {
+  font-size: x-large;
+}
+.navbar-right .plus .bi-caret-down-fill {
+  font-size: small;
+  margin-left: -3px;
+  margin-top: 2px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+.menu-left .menu-img {
+  width: 180px;
+}
+.menu-left .menu-img img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: -4px;
+}
+.menu-left .menu-img .set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(206, 206, 210);
+  border-top-width: 0px;
+  padding-left: 5px;
+  height: 40px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.menu-left .name-tag {
+  margin-top: -10px;
+  font-weight: 400;
+}
+.menu-left .name-tag h1 {
+  margin-bottom: -10px;
+}
+.menu-left .name-tag h3 {
+  color: gainsboro;
+}
+.menu-left .edit-profil {
+  width: 180px;
+}
+.menu-left .edit-profil button {
+  width: 180px;
+  border-radius: 20px;
+  border: ghostwhite;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.menu-left .edit-profil button:hover {
+  background-color: black;
+  color: white;
+  transition: all 1s ease;
+}
+.menu-left .edit-profil p {
+  font-size: small;
+}
+.menu-left .edit-profil .link {
+  font-size: 10px;
+  display: flex;
+  cursor: pointer;
+}
+.menu-left .organize {
+  width: 180px;
+}
+.menu-left .organize h2 {
+  font-size: medium;
+}
+.menu-left .organize h1 {
+  font-size: medium;
+}
+
+.menu-right {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+  left: 400px;
+  width: 700px;
+}
+.menu-right .right-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 700px;
+}
+.menu-right .right-list a {
+  text-decoration: none;
+  color: black;
+  border: 0px solid gainsboro;
+  border-bottom-width: 1px;
+  padding-bottom: 20px;
+}
+.menu-right .right-list a span {
+  font-weight: bold;
+  background-color: gainsboro;
+  border-radius: 20px;
+  padding: 5px;
+}
+.menu-right .right-list .special {
+  font-weight: 600;
+  border: 0px solid orangered;
+  border-bottom-width: 2px;
+}
+.menu-right .menu-content {
+  margin-left: 35px;
+}
+.menu-right .menu-content .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-right .menu-content .head p {
+  cursor: pointer;
+}
+.menu-right .menu-content .head p:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+.menu-right .menu-content .card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.menu-right .menu-content .card-content .card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  padding: 5px;
+  border-radius: 10px;
+}
+.menu-right .menu-content .card-content .card .card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-right .menu-content .card-content .card .card-head i {
+  cursor: pointer;
+}
+.menu-right .menu-content .card-content .card .card-head .card-head-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.menu-right .menu-content .card-content .card .card-head .card-head-left p {
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+.menu-right .menu-content .card-content .card .card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.menu-right .menu-content .card-content .card:hover {
+  background-color: gainsboro;
+  transform: scale(1.1);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Maven Pro", sans-serif;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+.menu{
+    position: relative;
+}
+.menu-left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    .menu-img{
+     
+        width: 180px;
+      img{
+        width: 180px;
+        height: 180px;
+        margin-bottom: -4px;
+      }
+      .set{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        border: 2px solid rgb(206, 206, 210);
+        border-top-width: 0px;
+       padding-left: 5px;
+       height: 40px;
+       opacity: 0.8;
+       cursor: pointer;
+      }
+    }
+    .name-tag{
+      
+        margin-top: -10px;
+        font-weight: 400;
+        h1{
+            margin-bottom: -10px;
+        }
+        h3{
+            color: gainsboro;
+        }
+    }
+    .edit-profil{
+       
+        width: 180px;
+        button{
+            width: 180px;
+            border-radius: 20px;
+            border: ghostwhite;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            transition: all 1s ease;
+        }
+        p{
+            font-size: small;
+        }
+        .link{
+            font-size: 10px;
+            display: flex;
+            cursor: pointer;
+        }
+    }
+    .organize{
+        
+        width: 180px;
+        h2{
+            font-size: medium;
+        }
+        h1{
+            font-size: medium;
+        }
+    }
+}
+.menu-right{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    left: 400px;
+    width: 700px;
+    .right-list{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+       width: 700px;
+        a{
+            text-decoration: none;
+            color: black;
+            border: 0px solid gainsboro;
+            border-bottom-width: 1px;
+            padding-bottom: 20px;
+            span{
+                font-weight: bold;
+                background-color: gainsboro;
+                border-radius: 20px;
+                padding: 5px;
+            }
+        }
+        .special{
+            font-weight: 600;
+            border: 0px solid orangered;
+            border-bottom-width: 2px;
+        }
+    }
+    .menu-content{
+        margin-left: 35px;
+       .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            cursor: pointer;
+        }
+        p:hover{
+            transform: scale(1.1);
+            transition: all 1s ease;
+        }
+    }
+    .card-content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        .card{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gainsboro;
+            padding: 5px;
+            border-radius: 10px;
+          
+            .card-head{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                i{
+                    cursor: pointer;
+                }
+                
+                .card-head-left{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                    p{
+                        font-weight: bold;
+                        color: blue;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .card-body{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        .card:hover{
+            background-color: gainsboro;
+            transform: scale(1.1);
+            transition: all 1s ease;
+            cursor: pointer;
+        }
+    } 
+    }
+}

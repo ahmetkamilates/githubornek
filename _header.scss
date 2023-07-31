@@ -1,0 +1,102 @@
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(47, 47, 107);
+    justify-content: space-between;
+    height: 60px;
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    
+    i{
+        color: white;
+    }
+    .input{
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+      
+        input{
+            height: 20px;
+            width: 160px;
+            background-color: rgb(94, 92, 92);
+            
+            border-radius: 20px;
+            border: none;
+        }
+        i{
+            margin-left: -25px;
+            margin-bottom: 2px;
+            opacity: 0.8;
+            color: white;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+    }
+    .navbar-list{
+        color: white;
+        list-style: none;
+        margin-left: -20px;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            margin-right: 8px;
+        }
+        a:hover{
+            transform: scale(1.1);
+            opacity: 0.8;
+            transition: all 1s ease;
+
+        }
+       .active{
+        font-weight: bold;
+       }
+    }
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    margin-right: 20px;
+    i{
+        cursor: pointer;
+    }
+    .profil{
+        display: flex;
+        gap: 5px;
+        .bi-caret-down-fill{
+            cursor: pointer;
+            font-size: small;
+            margin-left: -3px;
+            margin-top: 3px;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+    .plus{ 
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        .bi-plus{
+           font-size: x-large;
+        }
+        .bi-caret-down-fill{
+           
+            font-size: small;
+            margin-left: -3px;
+            margin-top: 2px;
+        }
+    }
+    }
